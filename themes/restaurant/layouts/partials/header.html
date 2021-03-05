@@ -1,22 +1,22 @@
 <header>
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
-      {{ with .Site.Menus.main }}
-      <nav>
-        <ul>
-          {{ range . }}
-          <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
-          {{ end }}
-        </ul>
-      </nav>
-      {{ end }}
-      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
+      <a href="{{ .Site.BaseURL }}">LOGOTYPE</a>
     </div>
+    <div class="navbar-menu" id="navMenu">
+      <ul class="main-menu desktop-menu navbar-start">
+        <li class="navbar-item"><a href="#">One</a></li>
+        <li class="navbar-item"><a href="#">Two</a></li>
+      </ul>
+      <div class="navbar-end header-phone">
+        +64 022 999999
+      </div>
+    </div>
+    <a role="button" class="navbar-burger" data-target="navMenu">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
   </nav>
 	
 </header>
