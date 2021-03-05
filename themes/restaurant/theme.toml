@@ -1,0 +1,12 @@
+description = "Starter Hugo theme for developers."
+features = ["blog"]
+homepage = "https://github.com/vimux/blank/"
+license = "MIT"
+licenselink = "https://github.com/vimux/blank/blob/master/LICENSE"
+min_version = "0.20"
+name = "Restaurant"
+tags = ["blog", "plain", "blank", "starter", "development"]
+
+[author]
+homepage = "https://github.com/vimux"
+name = "Vimux"
