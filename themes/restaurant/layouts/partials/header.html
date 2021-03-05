@@ -1,15 +1,11 @@
-<header>
+<header class="main-header">
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <a href="{{ .Site.BaseURL }}">LOGOTYPE</a>
+      <a href="{{ .Site.BaseURL }}"><img src="/logo.svg" alt="Site logo"></a>
     </div>
     <div class="navbar-menu" id="navMenu">
-      <ul class="main-menu desktop-menu navbar-start">
-        <li class="navbar-item"><a href="#">One</a></li>
-        <li class="navbar-item"><a href="#">Two</a></li>
-      </ul>
-      <div class="navbar-end header-phone">
-        +64 022 999999
+      <div class="navbar-end navbar-contact-us">
+       <button class="button button-inversed">Contact us</button> 
       </div>
     </div>
     <a role="button" class="navbar-burger" data-target="navMenu">
@@ -18,5 +14,7 @@
       <span aria-hidden="true"></span>
     </a>
   </nav>
+  <p class="hero-text">{{ .Params.hero }}</p>
+  <a class="with-arrow">Menu</a>
 	
 </header>

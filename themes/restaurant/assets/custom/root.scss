@@ -1,3 +1,78 @@
 @charset "utf-8";
 
-@import "modules/test";
+@import "modules/variables";
+
+.main-header {
+  background-image: url("/header-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding: $content-margin;
+  padding-bottom: 40px;
+  box-sizing: border-box;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+.nav {
+  display: flex;
+  align-items: flex-start;
+}
+.navbar {
+  background-color: transparent;
+  position: relative;
+}
+.navbar-menu {
+  background-color: transparent;
+}
+.navbar-menu .is-active {
+  position: absolute;
+  top: 25px;
+}
+.navbar-burger {
+  background-color: transparent;
+  position: absolute;
+  right: 0;
+  top: 0;
+  span {
+    height: 2px;
+    color: white;
+  }
+}
+.button-inversed {
+  background-color: transparent;
+  color: white;
+  border-color: white;
+  border-width: 2px;
+  &:hover {
+    color: white;
+    background-color: white;
+    background-color: transparent;
+  }
+}
+.hero-text {
+  font-size: 72px;
+  line-height: 84px;
+}
+.with-arrow {
+  font-size: 24px;
+  position: relative;
+  color: white;
+  &::after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-image: url(/arrow.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -10px;
+    left: calc(50% - 6px);
+  }
+  &:hover {
+    color: white;
+  }
+}
