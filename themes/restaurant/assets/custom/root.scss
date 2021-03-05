@@ -2,6 +2,19 @@
 
 @import "modules/variables";
 
+h2 {
+  font-size: 36px;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 40px;
+}
+section {
+  margin-top: 40px;
+}
+.content-margin {
+  padding: $content-margin;
+}
+
 .main-header {
   background-image: url("/header-bg.jpg");
   background-position: center;
@@ -75,4 +88,16 @@
   &:hover {
     color: white;
   }
+}
+.menu-item {
+  margin-bottom: 40px;
+}
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+}
+.menu-name,
+.menu-price {
+  font-size: 24px;
+  font-weight: 700;
 }

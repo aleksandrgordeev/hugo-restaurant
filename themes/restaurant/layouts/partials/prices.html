@@ -1,17 +1,13 @@
-<section class="pricelist">
-  <h2>Menu</h2>
+<section class="pricelist content-margin" id="prices">
+  <h2>Pizza menu</h2>
   <table class="table is-striped is-fullwidth is-hoverable">
-    <thead>
-      <tr>
-        <th>Items</th>
-        <th>Price</th>
-      </tr>
-      {{ range . }}
-        <tr>
-          <td>{{.meal}}</td>
-          <td>{{.price}}</td>
-        </tr>
-      {{end}}
-    </thead>
-  </table>
+    {{ range . }}
+      <div class="menu-item">
+        <div class="menu-header">
+          <span class="menu-name">{{.meal}}</span>
+          <span class="menu-price">${{.price}}</span>
+        </div>
+        <p>{{ .components }}</p>
+      </div>      
+    {{end}}
 </section>

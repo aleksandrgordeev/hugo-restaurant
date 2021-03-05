@@ -1,10 +1,12 @@
 [
   {
-    "meal": "Yakisoba",
-    "price": "12"
+    "meal": "Margherita",
+    "price": "20",
+    "components": "tomato, oil, basil and mozzarella"
   },
   {
-    "meal": "Ramen",
-    "price": "20"
+    "meal": "Marinara",
+    "price": "22",
+    "components": "tomato, garlic, oregano and oil"
   }
 ]
