@@ -1,5 +1,5 @@
 {{ define "main" }}
-  {{ partial "prices.html" $.Site.Data.prices }}
+  {{ partial "prices.html" .Site.Data.prices }}
   <main>
 		{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
 		{{ range $paginator.Pages }}
