@@ -1,0 +1,18 @@
+<section class="pricelist">
+  <h2>Menu</h2>
+  <table class="table is-striped is-fullwidth is-hoverable">
+    <thead>
+      <tr>
+        <th>Items</th>
+        <th>Price</th>
+      </tr>
+      {{ range . }}
+        <tr>
+          <td>{{.meal}}</td>
+          <td>{{.price}}</td>
+        </tr>
+      {{end}}
+    </thead>
+  </table>
+  <div>Short Description of {{.Site.Data.User0123.Name}}: </div>
+</section>
