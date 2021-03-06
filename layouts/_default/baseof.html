@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
 
   <!-- Custom css -->
-  {{ $custom := resources.Get "custom/root.scss" | resources.ToCSS (dict "outputStyle" "compressed") | fingerprint }}
+  {{ $custom := resources.Get "sass/root.scss" | resources.ToCSS (dict "outputStyle" "compressed") | fingerprint }}
   <link rel="stylesheet" href="{{ $custom.Permalink }}">
 </head>
 <body>

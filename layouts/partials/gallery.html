@@ -1,0 +1,8 @@
+<section class="gallery">
+  <h2 class="visually-hidden">{{ .header }}</h2>
+  <div class="gallery_images">
+    {{ range .images }}
+      <img class="gallery_img" src="{{.image}}" alt="{{.alt}}">
+    {{ end }}
+  </div>
+</section>

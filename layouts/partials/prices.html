@@ -1,20 +1,22 @@
-<section class="pricelist content-margin" id="prices">
+<section class="pricelist" id="prices">
   <div class="container">
     <h2>Pizza menu</h2>
-    {{ range .Site.Data.prices }}
-      <div class="price">
-        <div class="price_header">
-          <span class="price_name">
-            {{.meal}}
-          </span>
-          <span class="price_value">
-            ${{.price}}
-          </span>
+    <div class="prices">
+      {{ range .Site.Data.prices }}
+        <div class="price">
+          <div class="price_header">
+            <span class="price_name">
+              {{.meal}}
+            </span>
+            <span class="price_value">
+              ${{.price}}
+            </span>
+          </div>
+          <p class="pric_description">
+            {{ .description }}
+          </p>
         </div>
-        <p class="pric_description">
-          {{ .description }}
-        </p>
-      </div>
-    {{ end }}
+      {{ end }}
+     </div>
   </div>
 </section>

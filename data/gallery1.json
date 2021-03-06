@@ -1,0 +1,14 @@
+{
+  "header": "Our delcious pizza",
+  "images": 
+  [
+    {
+      "image": "/img/welcoming-pizza.jpg",
+      "alt": "Welcoming pizza"
+    },
+    {
+      "image": "/img/delicious-pizza.jpg",
+      "alt": "Delicious pizza"
+    }
+  ]
+}
