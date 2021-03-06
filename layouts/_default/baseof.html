@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="{{ .Site.LanguageCode | default "en" }}">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {{ partial "seo" .}}
+
+  <!-- Connect Google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+
+  <!-- Custom css -->
+  {{ $custom := resources.Get "custom/root.scss" | resources.ToCSS (dict "outputStyle" "compressed") | fingerprint }}
+  <link rel="stylesheet" href="{{ $custom.Permalink }}">
+</head>
+<body>
+  {{ partial "header" . }}
+  {{ block "main" . }}{{ end }}
+  {{ partial "footer" . }}
+</body>
+</html>

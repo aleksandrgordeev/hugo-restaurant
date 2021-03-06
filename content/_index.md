@@ -1,5 +1,7 @@
 ---
-hero: The happiest pizza in town
+title: Happy pizza
+description: The best pizza in the city
+hero: 
 ---
 
 Some page content
