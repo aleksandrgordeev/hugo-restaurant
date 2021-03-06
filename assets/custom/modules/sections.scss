@@ -55,6 +55,9 @@
   &::before {
     bottom: 13px;
   }
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .main-header_text {
@@ -76,4 +79,19 @@
     bottom: -12px;
     left: calc(50% - 6px);
   }
+}
+
+.price {
+  max-width: 340px;
+  margin-bottom: 80px;
+}
+
+.price_header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price_name, .price_value {
+  font-size: 24px;
+  font-weight: bold;
 }

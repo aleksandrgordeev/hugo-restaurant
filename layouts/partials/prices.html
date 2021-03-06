@@ -1,13 +1,20 @@
 <section class="pricelist content-margin" id="prices">
-  <h2>Pizza menu</h2>
-  <table class="table is-striped is-fullwidth is-hoverable">
+  <div class="container">
+    <h2>Pizza menu</h2>
     {{ range .Site.Data.prices }}
-      <div class="menu-item">
-        <div class="menu-header">
-          <span class="menu-name">{{.meal}}</span>
-          <span class="menu-price">${{.price}}</span>
+      <div class="price">
+        <div class="price_header">
+          <span class="price_name">
+            {{.meal}}
+          </span>
+          <span class="price_value">
+            ${{.price}}
+          </span>
         </div>
-        <p>{{ .components }}</p>
-      </div>      
-    {{end}}
+        <p class="pric_description">
+          {{ .description }}
+        </p>
+      </div>
+    {{ end }}
+  </div>
 </section>
