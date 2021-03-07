@@ -13,7 +13,7 @@ h2 {
 .header {
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;  
+  background-position: center;
   color: $white;
   text-align: center;
 }
@@ -32,23 +32,49 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 40px;
 }
 
-.nav_contact {
+.nav_logo {
+  max-height: 40px;
+  width: auto;
+}
+
+.nav_items {
+  list-style: none;
+  padding: 0;
   display: none;
+  @include bp(tablet-up) {
+    display: flex;
+  }
+}
+
+.nav_item {
+  margin-right: 30px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.nav_link {
+  color: $white;
+  text-decoration: none;
+  font-size: 24px;
 }
 
 .hamburger {
   font-size: 0;
   border: none;
-  box-sizing:border-box;
+  box-sizing: border-box;
   background-color: transparent;
   position: relative;
   display: inline-block;
   width: 30px;
   height: 20px;
   border-bottom: 3px solid $white;
-  &::before, &::after {
+  flex-shrink: 0;
+  &::before,
+  &::after {
     content: "";
     position: absolute;
     left: 0;
@@ -66,6 +92,13 @@ h2 {
   &:hover {
     cursor: pointer;
   }
+  @include bp(tablet-up) {
+    display: none;
+  }
+}
+
+.hamburger_switch {
+  display: none;
 }
 
 .header_text {
@@ -89,17 +122,20 @@ h2 {
   }
 }
 
-.price, .review {
+.price,
+.review {
   margin-bottom: 80px;
 }
 
-.price_header, .review_header {
+.price_header,
+.review_header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.price_name, .price_value,
+.price_name,
+.price_value,
 .review_name {
   font-size: 24px;
   font-weight: bold;
@@ -122,9 +158,13 @@ h2 {
   margin-top: 80px;
 }
 
+.contacts_wrapper {
+  grid-gap: 20px;
+}
+
 .contacts {
   text-align: center;
-  font-size: 24px;  
+  font-size: 24px;
 }
 
 .contacts_header {
