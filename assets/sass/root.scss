@@ -2,6 +2,8 @@
 
 @import "libs/normalize";
 @import "modules/variables";
+@import "mixins/breakpoints";
+@import "modules/grid";
 @import "modules/typography";
 @import "modules/general";
 @import "modules/sections";

@@ -1,14 +1,5 @@
 //Flexible breakpoint mixins
-$breakpoint-map: (
-  'desktop-up': 'min-width' 1146px,
-  'desktop-down': 'max-width' 1145px,
-  'tablet-big-up': 'min-width' 1024px,
-  'tablet-big-down': 'max-width' 1023px,
-  'tablet-up': 'min-width' 768px,
-  'tablet-down': 'max-width' 767px,
-  'mobile-up': 'min-width' 414px,
-  'mobile-down': 'max-width' 413px
-);   
+ 
 
 @mixin bp($breakpoint) {
   $breakpoint-vals: map-get($breakpoint-map, $breakpoint);

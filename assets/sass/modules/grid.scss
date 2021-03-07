@@ -1,0 +1,25 @@
+.grid {
+  display: grid;
+
+}
+
+.grid--3 {
+  grid-template-columns: auto auto auto;
+  column-gap: 84px;
+
+  @include bp(desktop-down) {
+    grid-template-columns: auto auto;
+  }
+  @include bp(tablet-down) {
+    grid-template-columns: auto;
+  }
+}
+
+.grid--2 {
+  grid-template-columns: auto auto;
+  column-gap: 124px;
+
+  @include bp(tablet-down) {
+    grid-template-columns: auto;
+  }
+}
