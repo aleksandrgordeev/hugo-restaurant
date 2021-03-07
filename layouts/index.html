@@ -1,6 +1,7 @@
 {{ define "main" }}
   <main>
-    {{ partial "prices.html" . }}
-    {{ partial "gallery.html" .Site.Data.gallery1 }}       
+    {{ partial "prices.html" .Site.Data.prices }}
+    {{ partial "gallery.html" .Site.Data.gallery1 }}    
+    {{ partial "reviews.html" .Site.Data.reviews }}   
   </main>
 {{ end }}
