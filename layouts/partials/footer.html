@@ -1,3 +1,24 @@
 <footer id="contacts" class="footer">
-	<h2>Contact us</h2>
+	<div class="container">
+		<h2>Contact us</h2>
+		<div class="contacts">
+			<p class="contacts_header">Location</p>
+			<p class="contacts_text">{{ .Site.Data.meta.location }}</p>
+			<p class="contacts_header">Hours</p>
+			<p class="contacts_text">
+				{{ range .Site.Data.meta.hours }}
+					<span class="contacts_days">{{ .days }}</span> {{ .hours }}<br>
+				{{ end }}
+			</p>
+			<p class="contacts_header">Phone</p>
+			<p class="contacts_text">{{ .Site.Data.meta.phone }}</p>
+			<p class="social">
+				{{ range .Site.Data.social }}
+					<a href="{{ .link }}" class="social_link">{{ .name }}
+						<img class="social_icon" src="{{ .icon }}" alt="{{.name}}" aria-hidden="true">
+					</a>
+				{{ end }}
+			</p>
+		</div>
+	</div>	
 </footer>

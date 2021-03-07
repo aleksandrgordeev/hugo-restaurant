@@ -1,0 +1,15 @@
+{
+  "location": "123 Demo Street, Dunedin, 9010",
+  "phone": "(03) 477-7777",
+  "hours": 
+  [
+    {
+      "days": "Mon-Thur",
+      "hours": "5pm-11pm"
+    },
+    {
+      "days": "Fri-Sun",
+      "hours": "12pm-11pm"
+    }
+  ]
+}

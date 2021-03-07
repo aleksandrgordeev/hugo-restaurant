@@ -113,4 +113,31 @@ h2 {
 .footer {
   background-color: $charcoal;
   color: $white;
+  box-sizing: border-box;
+  padding-bottom: 150px;
+  padding-top: 1px;
+}
+
+.contacts {
+  text-align: center;
+  font-size: 24px;  
+}
+
+.contacts_header {
+  font-weight: bold;
+}
+.contacts_text {
+  margin-bottom: 40px;
+  line-height: 32px;
+}
+
+.social {
+  font-size: 0;
+}
+
+.social_link {
+  margin-right: 25px;
+  &:last-child {
+    margin-right: 0;
+  }
 }
