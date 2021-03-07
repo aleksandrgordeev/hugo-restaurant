@@ -2,6 +2,12 @@
   <main>
     {{ partial "prices.html" .Site.Data.prices }}
     {{ partial "gallery.html" .Site.Data.gallery1 }}    
-    {{ partial "reviews.html" .Site.Data.reviews }}   
+    {{ partial "reviews.html" .Site.Data.reviews }} 
+    {{ partial "gallery.html" .Site.Data.gallery2 }}
+    <section id="content" class="content-section">
+      <div class="container">
+        {{ .Content }}
+      </div>
+    </section>   
   </main>
 {{ end }}

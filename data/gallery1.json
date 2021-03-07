@@ -4,11 +4,11 @@
   [
     {
       "image": "/img/welcoming-pizza.jpg",
-      "alt": "Welcoming pizza"
+      "alt": "Welcome to the happiest pizza in town"
     },
     {
       "image": "/img/delicious-pizza.jpg",
-      "alt": "Delicious pizza"
+      "alt": "What can be better than pizza? Maybe more pizza?"
     }
   ]
 }

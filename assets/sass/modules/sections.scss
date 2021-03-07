@@ -10,7 +10,7 @@ h2 {
   margin: 0 auto;
 }
 
-.main-header {
+.header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;  
@@ -18,7 +18,7 @@ h2 {
   text-align: center;
 }
 
-.main-header_wrapper {
+.header_wrapper {
   box-sizing: border-box;
   height: 100vh;
   display: flex;
@@ -28,7 +28,7 @@ h2 {
   padding-top: 20px;
 }
 
-.main-header-nav {
+.header-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -68,13 +68,13 @@ h2 {
   }
 }
 
-.main-header_text {
+.header_text {
   font-size: 72px;
   line-height: normal;
   color: $white;
 }
 
-.main-header_scroll {
+.header_scroll {
   font-size: 24px;
   color: $white;
   position: relative;
@@ -108,4 +108,9 @@ h2 {
 .gallery_images {
   display: flex;
   flex-direction: column;
+}
+
+.footer {
+  background-color: $charcoal;
+  color: $white;
 }
