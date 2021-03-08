@@ -1,11 +1,10 @@
 ---
 title: Happy pizza
 description: The best pizza in town
-header_text: The happiest pizza in town
+logo_image: img/logo.svg
 header_image: img/header-bg.jpg
-logo: img/logo.svg
-gallery:
-  style: select
+header_text: The happiest pizza in town
+prices:
   values:
     - label: Image
       image: /path/to/source-image.png
