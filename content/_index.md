@@ -4,12 +4,19 @@ description: The best pizza in town
 header_text: The happiest pizza in town
 header_image: img/header-bg.jpg
 logo: img/logo.svg
-[[_array_structures.gallery.values]]
-label = "Image"
-icon = "image"
-[_array_structures.gallery.values.value]
-image = "/placeholder.png"
-caption = ""
+gallery:
+  style: select
+  values:
+    - label: Image
+      image: /path/to/source-image.png
+      value:
+        image: /placeholder.png
+        caption:
+    - label: External link
+      icon: link
+      value:
+        url:
+        title:
 ---
 
 # About Happy Pizza
