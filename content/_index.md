@@ -8,10 +8,10 @@ prices:
   prices:
     - meal: Margheritty
       price: 20
-      description: 'to, oil, basil and mozzarella'
+      description: to, oil, basil and mozzarella
     - meal: Marinara
       price: 22
-      description: 'tomato, garlic, oregano and oils'
+      description: tomato, garlic, oregano and oils
 ---
 
 # About Happy Pizza
