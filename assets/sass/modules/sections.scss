@@ -29,6 +29,7 @@ h2 {
 }
 
 .header-nav {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -43,6 +44,7 @@ h2 {
 .nav_items {
   list-style: none;
   padding: 0;
+  margin: 0;
   display: none;
   @include bp(tablet-up) {
     display: flex;
@@ -60,6 +62,9 @@ h2 {
   color: $white;
   text-decoration: none;
   font-size: 24px;
+  &:hover {
+    color: darken($white, 15%);
+  }
 }
 
 .hamburger {
@@ -99,6 +104,23 @@ h2 {
 
 .hamburger_switch {
   display: none;
+}
+
+.hamburger_switch:checked ~ .nav_items {
+  @include bp(tablet-down) {
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(#000, $alpha: 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    .nav_item {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
 }
 
 .header_text {
