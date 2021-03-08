@@ -6,12 +6,9 @@ header_image: img/header-bg.jpg
 header_text: The happiest pizza in town
 prices:
   prices:
-    - label: Menu item
-      icon: link
-      value:
-        meal:
-        price:
-        description:
+    - meal: Margherita
+      price: 20
+      description: tomato, oil, basil and mozzarella
 ---
 
 # About Happy Pizza
