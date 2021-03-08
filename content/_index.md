@@ -4,13 +4,12 @@ description: The best pizza in town
 header_text: The happiest pizza in town
 header_image: img/header-bg.jpg
 logo: img/logo.svg
-[[_array_structures.prices.values]]
-label = "Prices"
-icon = "content_paste"
-[_array_structures.prices.values.value]
-meal = "Margherita"
-price = "20"
-description = "tomato, oil, basil and mozzarella"
+[[_array_structures.gallery.values]]
+label = "Image"
+icon = "image"
+[_array_structures.gallery.values.value]
+image = "/placeholder.png"
+caption = ""
 ---
 
 # About Happy Pizza
