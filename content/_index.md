@@ -6,12 +6,30 @@ header_image: img/header-bg.jpg
 header_text: The happiest pizza in town
 prices:
   prices:
-    - meal: Margheritty
+    - meal: Margherita
       price: 20
-      description: to, oil, basil and mozzarella
+      description: tomato, oil, basil and mozzarella
     - meal: Marinara
       price: 22
       description: tomato, garlic, oregano and oils
+    - meal: Prosciutto e funghi
+      price: 28
+      description: ham, mushroom and mozzarella
+    - meal: Capricciosa
+      price: 24
+      description: cooked ham, mushrooms, artichokes, tomato and mozzarella
+    - meal: Quattro Formaggi
+      price: 28
+      description: tomato, provolone, parmigiano reggiano,  gorgonzola, and mozzarella
+    - meal: Diavola
+      price: 24
+      description: tomato, spicy salami, basil and mozzarella
+    - meal: Quattro Stagioni
+      price: 26
+      description: cooked ham, mushrooms, artichokes, black olives, tomato and mozzarella
+    - meal: Vegetariana
+      price: 24
+      description: tomato, peppers, aubergines and courgette, and mozzarella
 ---
 
 # About Happy Pizza
