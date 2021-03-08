@@ -5,17 +5,13 @@ logo_image: img/logo.svg
 header_image: img/header-bg.jpg
 header_text: The happiest pizza in town
 prices:
-  values:
-    - label: Image
-      image: /path/to/source-image.png
-      value:
-        image: /placeholder.png
-        caption:
-    - label: External link
+  prices:
+    - label: Menu item
       icon: link
       value:
-        url:
-        title:
+        meal:
+        price:
+        description:
 ---
 
 # About Happy Pizza
