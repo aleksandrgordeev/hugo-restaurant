@@ -1,12 +1,12 @@
 [
   {
     "name": "facebook",
-    "icon": "/img/facebook.svg",
+    "icon_image": "/img/facebook.svg",
     "link": "https://facebook.com"
   },
   {
     "name": "instagram",
-    "icon": "/img/instagram.svg",
+    "icon_image": "/img/instagram.svg",
     "link": "https://instagram.com"
   }
 ]
