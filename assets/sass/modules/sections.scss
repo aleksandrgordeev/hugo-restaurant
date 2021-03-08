@@ -70,13 +70,12 @@ h2 {
 .hamburger {
   font-size: 0;
   border: none;
-  box-sizing: border-box;
   background-color: transparent;
   position: relative;
   display: inline-block;
   width: 30px;
-  height: 20px;
-  border-bottom: 3px solid $white;
+  height: 3px;
+  background-color: $white;
   flex-shrink: 0;
   &::before,
   &::after {
@@ -89,10 +88,10 @@ h2 {
     background-color: $white;
   }
   &::after {
-    bottom: 5px;
+    bottom: -10px;
   }
   &::before {
-    bottom: 13px;
+    bottom: 10px;
   }
   &:hover {
     cursor: pointer;
@@ -104,6 +103,22 @@ h2 {
 
 .hamburger_switch {
   display: none;
+}
+
+.hamburger_switch:checked ~ .hamburger {
+  @include bp(tablet-down) {
+    border-bottom: none;
+    transform: rotate(45deg);
+    transition: transform 0.5s;
+    &::after {
+      display: none;
+    }
+    &::before {
+      width: 30px;
+      transform: rotate(90deg);
+      margin-bottom: -10px;
+    }
+  }
 }
 
 .hamburger_switch:checked ~ .nav_items {
