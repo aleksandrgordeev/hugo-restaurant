@@ -6,7 +6,7 @@ header_image: img/header-bg.jpg
 header_text: The happiest pizza in town
 prices:
   prices:
-    - meal: Margherita
+    - meal: Margherit
       price: 20
       description: 'to, oil, basil and mozzarella'
     - meal: Marinara
