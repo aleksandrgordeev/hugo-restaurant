@@ -18,5 +18,7 @@
   {{ partial "header" . }}
   {{ block "main" . }}{{ end }}
   {{ partial "footer" . }}
+  {{ $js := resources.Get "js/main.js" | js.Build }}
+  <script src="{{ $js.Permalink }}"></script>
 </body>
 </html>
