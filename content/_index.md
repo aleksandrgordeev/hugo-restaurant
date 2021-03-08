@@ -1,6 +1,6 @@
 ---
 title: Happy pizza
-description: The best pizza in the city
+description: The best pizza in town
 header_text: The happiest pizza in town
 header_image: img/header-bg.jpg
 ---
