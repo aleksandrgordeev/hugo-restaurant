@@ -15,7 +15,7 @@
 				<p class="contacts_text">{{ .Site.Data.meta.phone }}</p>
 				<p class="social">
 					{{ range .Site.Data.social }}
-						<a href="{{ .link }}" target="_blank" class="social_link">{{ .name }}
+						<a href="{{ .link }}" target="_blank" rel="noreferrer" class="social_link">{{ .name }}
 							<img class="social_icon" src="{{ .icon_image }}" alt="{{.name}}" aria-hidden="true" width="27" height="27">
 						</a>
 					{{ end }}
