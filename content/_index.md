@@ -4,14 +4,6 @@ description: The best pizza in town
 logo_image: img/logo.svg
 header_image: img/header-bg.jpg
 header_text: The happiest pizza in town
-prices:
-  prices:
-    - meal: Margherita
-      price: '20'
-      description: 'tomato, oil, basil and mozzarella'
-    - meal: Marinar
-      price: '22'
-      description: 'tomato, garlic, oregano and oil'
 ---
 
 # About Happy Pizza
