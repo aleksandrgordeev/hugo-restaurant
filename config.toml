@@ -2,8 +2,8 @@ baseURL = "http://example.org/"
 languageCode = "en"
 
 [[params._selectData.ratings]]
-"1 star" = 1
-"2 stars" = 2
-"3 stars" = 3
-"4 stars" = 4
-"5 stars" = 5
+1 = "1 star"
+2 = "2 stars"
+3 = "3 stars"
+4 = "4 stars"
+5 = "5 stars"
