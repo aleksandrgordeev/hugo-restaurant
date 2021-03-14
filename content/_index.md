@@ -1,7 +1,6 @@
 ---
 logo_image: img/logo.svg
 header_image: img/header-bg.jpg
-header_text: The happiest pizza in town
 prices:
   - meal: Margherita
     price: 20
