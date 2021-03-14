@@ -4,17 +4,17 @@
 		<div class="contacts_wrapper grid grid--2">
 			<div class="contacts">
 				<p class="contacts_header">Location</p>
-				<p class="contacts_text">{{ .Site.Data.meta.location }}</p>
+				<p class="contacts_text">{{ .Params.location }}</p>
 				<p class="contacts_header">Hours</p>
 				<p class="contacts_text">
-					{{ range .Site.Data.meta.hours }}
+					{{ range .Params.hours }}
 						<span class="contacts_days">{{ .days }}</span> {{ .hours }}<br>
 					{{ end }}
 				</p>
 				<p class="contacts_header">Phone</p>
-				<p class="contacts_text">{{ .Site.Data.meta.phone }}</p>
+				<p class="contacts_text">{{ .Params.phone }}</p>
 				<p class="social">
-					{{ range .Site.Data.social }}
+					{{ range .Params.social }}
 						<a href="{{ .link }}" target="_blank" rel="noreferrer" class="social_link">{{ .name }}
 							<img class="social_icon" src="{{ .icon_image }}" alt="{{.name}}" aria-hidden="true" width="27" height="27">
 						</a>
@@ -23,9 +23,9 @@
 			</div>
 			<div class="map">
 				<iframe 
-          src={{ .Site.Data.meta.map.src }}
+          src={{ .Site.Data.settings.map.src }}
           width='100%' 
-          height={{ .Site.Data.meta.map.height }}
+          height={{ .Site.Data.settings.map.height }}
           style='border:0;'
           allowfullscreen='true' 
           loading='lazy'

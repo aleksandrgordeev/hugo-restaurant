@@ -1,9 +1,9 @@
 {{ define "main" }}
   <main>
-    {{ partial "prices.html" .Site.Data.prices }}
-    {{ partial "gallery.html" .Site.Data.gallery1 }}    
-    {{ partial "reviews.html" .Site.Data.reviews }} 
-    {{ partial "gallery.html" .Site.Data.gallery2 }}
+    {{ partial "prices.html" .Params.prices }}
+    {{ partial "gallery.html" .Params.top_gallery }}    
+    {{ partial "reviews.html" .Params.reviews }} 
+    {{ partial "gallery.html" .Params.bottom_gallery }}
     <section id="content" class="content-section editable">
       <div class="container">
         {{ .Content }}
