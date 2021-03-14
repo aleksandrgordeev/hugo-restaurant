@@ -227,3 +227,23 @@ h2 {
     margin-right: 0;
   }
 }
+
+.contacts_days {
+  font-weight: bold;
+}
+
+.contacts_phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url(/img/phone.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 10px;
+  }
+}
