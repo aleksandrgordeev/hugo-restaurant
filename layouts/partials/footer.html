@@ -1,17 +1,17 @@
 <footer id="contacts" class="footer">
 	<div class="container">
-		<h2>Contact us</h2>
+		<h2 class="editable">Contact us</h2>
 		<div class="contacts_wrapper grid grid--2">
 			<div class="contacts">
-				<p class="contacts_header">Location</p>
+				<p class="contacts_header editable">Location</p>
 				<p class="contacts_text">{{ .Params.location }}</p>
-				<p class="contacts_header">Hours</p>
+				<p class="contacts_header editable">Hours</p>
 				<p class="contacts_text">
 					{{ range .Params.hours }}
 						<span class="contacts_days">{{ .days }}</span> {{ .hours }}<br>
 					{{ end }}
 				</p>
-				<p class="contacts_header">Phone</p>
+				<p class="contacts_header editable">Phone</p>
 				<p class="contacts_text">{{ .Params.phone }}</p>
 				<p class="social">
 					{{ range .Params.social }}

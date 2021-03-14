@@ -55,7 +55,7 @@ reviews:
 top_gallery:
   seo_header: Our delcious pizza
   images:
-    - image: /static/img/welcoming-pizza.jpg
+    - image: /img/welcoming-pizza.jpg
       alt: Welcome to the happiest pizza in town
     - image: /img/delicious-pizza.jpg
       alt: What can be better than pizza? Maybe more pizza?
