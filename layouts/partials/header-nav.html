@@ -1,0 +1,9 @@
+<nav class="header-nav nav">
+  <img class="nav_logo" alt="Site logo" src="{{ .Params.logo_image }}" />
+  <ul class="nav_items nav_items--open">
+    {{ range .Site.Data.settings.nav }}
+      <li class="nav_item"><a href="{{ .url }}" class="nav_link">{{ .name }}</a></li>
+    {{ end }}
+  </ul>
+  <button class="nav_hamburger hamburger hamburger--open">Menu control</button>
+</nav>

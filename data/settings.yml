@@ -3,3 +3,12 @@ description: "The best pizza in town"
 map:
   src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2777.669131028397!2d170.5005326155185!3d-45.87792887910792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa82ead6ad4a19b37%3A0x2cc1d8ef611c836c!2sCloudCannon!5e0!3m2!1sen!2snz!4v1615160103587!5m2!1sen!2snz"
   height: 450
+nav:
+  - name: Menu
+    url: "#prices"
+  - name: Reviews
+    url: "#reviews"
+  - name: About
+    url: "#content"
+  - name: Contacts
+    url: "#contacts"

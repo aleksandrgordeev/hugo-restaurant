@@ -1,15 +1,6 @@
 <header class="header" style="background-image: url({{ .Params.header_image | absURL }});">
   <div class="container header_wrapper">
-    <nav class="header-nav nav">
-      <img class="nav_logo" alt="Site logo" src="{{ .Params.logo_image }}" />
-      <ul class="nav_items nav_items--open">
-        <li class="nav_item"><a href="#prices" class="nav_link">Menu</a></li>
-        <li class="nav_item"><a href="#reviews" class="nav_link">Reviews</a></li>
-        <li class="nav_item"><a href="#content" class="nav_link">About</a></li>
-        <li class="nav_item"><a href="#contacts" class="nav_link">Contacts</a></li>
-      </ul>
-      <button class="nav_hamburger hamburger hamburger--open">Menu control</button>
-    </nav>
+    {{ partial "header-nav" . }}
     <p class="header_text editable">
     	The <em><strong>happiest</strong></em> pizza in town
     </p>
