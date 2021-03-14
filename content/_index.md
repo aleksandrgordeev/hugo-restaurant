@@ -29,7 +29,7 @@ prices:
     description: 'tomato, peppers, aubergines and courgette, and mozzarella'
 reviews:
   - name: Kezza
-    rating: 3
+    rating: '4'
     text: >-
       We had a cozy dinner here. The lovely open fire kept us warm. The service
       was friendly and efficient. Lots of toppings and a generous size.
